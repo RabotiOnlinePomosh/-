@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>СтудРабота — учебные работы на заказ</title>
+  <title>СтудРабота - учебные работы на заказ</title>
   <meta name="description" content="Каталог учебных работ с фиксированными ценами и заявкой онлайн.">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -34,14 +34,13 @@
           <div class="trust">
             <span>✓ фиксированные цены</span>
             <span>✓ индивидуальный подход</span>
-            <span>✓ связь в Telegram</span>
           </div>
         </div>
         <div class="hero-card">
           <div class="mini-label">сегодня в работе</div>
-          <div class="work-line"><span class="dot"></span><div><b>Презентация</b><small>Экономика · 15 слайдов</small></div><strong>700 ₽</strong></div>
-          <div class="work-line"><span class="dot"></span><div><b>Реферат</b><small>История · 15 страниц</small></div><strong>900 ₽</strong></div>
-          <div class="work-line"><span class="dot"></span><div><b>Индивидуальный проект</b><small>С требованиями преподавателя</small></div><strong>1 500 ₽</strong></div>
+          <div class="work-line"><span class="dot"></span><div><b>Презентация</b><small> 10 слайдов</small></div><strong>450 ₽</strong></div>
+          <div class="work-line"><span class="dot"></span><div><b>Реферат</b><small> 10 страниц</small></div><strong>700 ₽</strong></div>
+          <div class="work-line"><span class="dot"></span><div><b>Индивидуальный проект</b><small>С требованиями преподавателя</small></div><strong>1 300 ₽</strong></div>
           <div class="card-note">Отправьте требования — остальное обсудим в заявке.</div>
         </div>
       </div>
@@ -63,17 +62,17 @@
           <article class="product" data-category="text">
             <div class="product-icon">01</div><div class="tag">текст</div>
             <h3>Реферат</h3><p>Структурированный текст с оформлением по вашим требованиям.</p>
-            <div class="product-bottom"><strong>от 500 ₽</strong><button class="order" data-service="Реферат" data-price="от 500 ₽">Оставить заявку</button></div>
+            <div class="product-bottom"><strong>от 700 ₽</strong><button class="order" data-service="Реферат" data-price="от 500 ₽">Оставить заявку</button></div>
           </article>
           <article class="product" data-category="visual">
             <div class="product-icon">02</div><div class="tag">визуал</div>
             <h3>Презентация</h3><p>Презентация по теме, с понятной структурой и аккуратным оформлением.</p>
-            <div class="product-bottom"><strong>от 700 ₽</strong><button class="order" data-service="Презентация" data-price="от 700 ₽">Оставить заявку</button></div>
+            <div class="product-bottom"><strong>от 450 ₽</strong><button class="order" data-service="Презентация" data-price="от 700 ₽">Оставить заявку</button></div>
           </article>
           <article class="product" data-category="project">
             <div class="product-icon">03</div><div class="tag">проект</div>
             <h3>Индивидуальный проект</h3><p>Теория, практическая часть, оформление и материалы для защиты.</p>
-            <div class="product-bottom"><strong>от 1 500 ₽</strong><button class="order" data-service="Индивидуальный проект" data-price="от 1 500 ₽">Оставить заявку</button></div>
+            <div class="product-bottom"><strong>от 1 300 ₽</strong><button class="order" data-service="Индивидуальный проект" data-price="от 1 500 ₽">Оставить заявку</button></div>
           </article>
           <article class="product" data-category="text">
             <div class="product-icon">04</div><div class="tag">текст</div>
@@ -132,7 +131,7 @@
       <div class="eyebrow">заявка</div>
       <h2 id="modalTitle">Оставить заявку</h2>
       <p class="selected">Вы выбрали: <b id="selectedService">—</b> · <b id="selectedPrice">—</b></p>
-      <form id="requestForm">
+      <form id="requestForm" action="https://form.typeform.com/to/KYDBEs5C" method="POST" enctype="multipart/form-data">
         <input type="hidden" id="service" name="service">
         <label>Ваше имя<input required name="name" placeholder="Например, Аня"></label>
         <label>Telegram<input required name="telegram" placeholder="@username"></label>
