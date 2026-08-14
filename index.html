@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>СтудРабота — учебные работы на заказ</title>
+  <meta name="description" content="Каталог учебных работ с фиксированными ценами и заявкой онлайн.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#top">студ<span>работа</span></a>
+      <nav>
+        <a href="#catalog">Работы</a>
+        <a href="#how">Как это работает</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="nav-btn" href="#catalog">Выбрать работу</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">для студентов · быстро · понятно</div>
+          <h1>Учебные работы<br><em>без лишней суеты.</em></h1>
+          <p class="hero-text">Выберите нужную работу, посмотрите цену и оставьте заявку. Мы изучим требования преподавателя и свяжемся с вами.</p>
+          <div class="hero-actions">
+            <a class="primary" href="#catalog">Смотреть работы <span>→</span></a>
+            <a class="secondary" href="#how">Как это работает</a>
+          </div>
+          <div class="trust">
+            <span>✓ фиксированные цены</span>
+            <span>✓ индивидуальный подход</span>
+            <span>✓ связь в Telegram</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="mini-label">сегодня в работе</div>
+          <div class="work-line"><span class="dot"></span><div><b>Презентация</b><small>Экономика · 15 слайдов</small></div><strong>700 ₽</strong></div>
+          <div class="work-line"><span class="dot"></span><div><b>Реферат</b><small>История · 15 страниц</small></div><strong>900 ₽</strong></div>
+          <div class="work-line"><span class="dot"></span><div><b>Индивидуальный проект</b><small>С требованиями преподавателя</small></div><strong>1 500 ₽</strong></div>
+          <div class="card-note">Отправьте требования — остальное обсудим в заявке.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow">каталог</div><h2>Выберите работу</h2></div>
+          <p>Цена указана за базовый вариант. Если требования отличаются, мы уточним стоимость после просмотра заявки.</p>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">Все</button>
+          <button class="filter" data-filter="text">Тексты</button>
+          <button class="filter" data-filter="visual">Презентации</button>
+          <button class="filter" data-filter="project">Проекты</button>
+        </div>
+        <div class="catalog">
+          <article class="product" data-category="text">
+            <div class="product-icon">01</div><div class="tag">текст</div>
+            <h3>Реферат</h3><p>Структурированный текст с оформлением по вашим требованиям.</p>
+            <div class="product-bottom"><strong>от 500 ₽</strong><button class="order" data-service="Реферат" data-price="от 500 ₽">Оставить заявку</button></div>
+          </article>
+          <article class="product" data-category="visual">
+            <div class="product-icon">02</div><div class="tag">визуал</div>
+            <h3>Презентация</h3><p>Презентация по теме, с понятной структурой и аккуратным оформлением.</p>
+            <div class="product-bottom"><strong>от 700 ₽</strong><button class="order" data-service="Презентация" data-price="от 700 ₽">Оставить заявку</button></div>
+          </article>
+          <article class="product" data-category="project">
+            <div class="product-icon">03</div><div class="tag">проект</div>
+            <h3>Индивидуальный проект</h3><p>Теория, практическая часть, оформление и материалы для защиты.</p>
+            <div class="product-bottom"><strong>от 1 500 ₽</strong><button class="order" data-service="Индивидуальный проект" data-price="от 1 500 ₽">Оставить заявку</button></div>
+          </article>
+          <article class="product" data-category="text">
+            <div class="product-icon">04</div><div class="tag">текст</div>
+            <h3>Доклад</h3><p>Краткий материал по теме, подготовленный под выступление.</p>
+            <div class="product-bottom"><strong>от 400 ₽</strong><button class="order" data-service="Доклад" data-price="от 400 ₽">Оставить заявку</button></div>
+          </article>
+          <article class="product" data-category="text">
+            <div class="product-icon">05</div><div class="tag">практика</div>
+            <h3>Практическая работа</h3><p>Выполнение задания по предоставленным условиям и образцам.</p>
+            <div class="product-bottom"><strong>от 600 ₽</strong><button class="order" data-service="Практическая работа" data-price="от 600 ₽">Оставить заявку</button></div>
+          </article>
+          <article class="product" data-category="project">
+            <div class="product-icon">06</div><div class="tag">индивидуально</div>
+            <h3>Другая работа</h3><p>Не нашли нужный вариант? Опишите задачу — мы посмотрим, чем можем помочь.</p>
+            <div class="product-bottom"><strong>по запросу</strong><button class="order" data-service="Другая работа" data-price="по запросу">Оставить заявку</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how section" id="how">
+      <div class="container">
+        <div class="eyebrow">процесс</div><h2>Всё просто</h2>
+        <div class="steps">
+          <div><b>01</b><h3>Выбираете работу</h3><p>Смотрите описание и базовую стоимость.</p></div>
+          <div><b>02</b><h3>Оставляете заявку</h3><p>Прикрепляете требования преподавателя, методичку или пример.</p></div>
+          <div><b>03</b><h3>Мы уточняем детали</h3><p>Связываемся с вами, подтверждаем срок и итоговую стоимость.</p></div>
+          <div><b>04</b><h3>Получаете результат</h3><p>После согласования отправляем готовые материалы.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div><div class="eyebrow">есть нестандартная задача?</div><h2>Просто расскажите о ней.</h2></div>
+        <button class="primary light order" data-service="Другая работа" data-price="по запросу">Оставить заявку <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <div class="eyebrow">вопросы</div><h2>FAQ</h2>
+        <details><summary>Можно ли прикрепить методичку или требования преподавателя?</summary><p>Да. В заявке можно прикрепить несколько файлов: PDF, DOC/DOCX, изображения и другие материалы.</p></details>
+        <details><summary>Цена может измениться?</summary><p>Указанная цена — базовая. Если объём или требования отличаются, мы сообщим новую стоимость до начала работы.</p></details>
+        <details><summary>Как происходит оплата?</summary><p>Этот блок можно заменить на ваши реальные условия оплаты. Не начинайте работу до согласования стоимости и условий с клиентом.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><span class="logo">студ<span>работа</span></span><span>© 2026 · ваш сервис</span></div></footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="close" id="close">×</button>
+      <div class="eyebrow">заявка</div>
+      <h2 id="modalTitle">Оставить заявку</h2>
+      <p class="selected">Вы выбрали: <b id="selectedService">—</b> · <b id="selectedPrice">—</b></p>
+      <form id="requestForm">
+        <input type="hidden" id="service" name="service">
+        <label>Ваше имя<input required name="name" placeholder="Например, Аня"></label>
+        <label>Telegram<input required name="telegram" placeholder="@username"></label>
+        <label>Тема / что нужно сделать<textarea required name="topic" rows="3" placeholder="Например: презентация по экономике на тему..."></textarea></label>
+        <label>Срок сдачи<input required name="deadline" type="date"></label>
+        <label>Требования и комментарий<textarea name="comment" rows="4" placeholder="Объём, оформление, пожелания и т. д."></textarea></label>
+        <label>Файлы от преподавателя<input id="files" name="files" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.jpg,.jpeg,.png,.zip"></label>
+        <small class="file-note">Важно: GitHub Pages сам по себе не принимает загруженные файлы на сервер. Ниже в инструкции показано, как подключить форму, чтобы файлы реально приходили вам.</small>
+        <button class="primary full" type="submit">Отправить заявку <span>→</span></button>
+      </form>
+      <div class="success" id="success">
+        <div class="success-icon">✓</div>
+        <h3>Заявка подготовлена</h3>
+        <p id="successText"></p>
+        <button class="secondary" id="closeSuccess">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
