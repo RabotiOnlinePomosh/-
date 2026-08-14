@@ -35,14 +35,44 @@ document.querySelectorAll('.filter').forEach(btn=>{
   });
 });
 
-form.addEventListener('submit',(e)=>{
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const data=new FormData(form);
-  const name=data.get('name');
-  const tg=data.get('telegram');
-  const s=data.get('service');
-  success.classList.add('show');
-  form.style.display='none';
-  document.getElementById('successText').textContent =
-    `${name}, заявка на «${s}» заполнена. В этой демо-версии данные никуда не отправляются. Подключите форму по инструкции в README.md, чтобы заявки и файлы приходили вам.`;
+
+  const data = new FormData(form);
+
+  const payload = {
+    service: data.get('service'),
+    price: selectedPrice.textContent,
+    name: data.get('name'),
+    group: data.get('group'),
+    contact: data.get('telegram'),
+    topic: data.get('topic'),
+    deadline: data.get('deadline'),
+    comment: data.get('comment')
+  };
+
+  const button = form.querySelector('button[type="submit"]');
+  button.disabled = true;
+  button.textContent = 'Отправляем...';
+
+  try {
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: JSON.stringify(payload)
+    });
+
+    form.style.display = 'none';
+    success.classList.add('show');
+
+    document.getElementById('successText').textContent =
+      `${payload.name}, заявка отправлена! Мы получили ваши данные и свяжемся с вами.`;
+
+  } catch (error) {
+    console.error(error);
+    alert('Не удалось отправить заявку. Попробуйте ещё раз.');
+
+    button.disabled = false;
+    button.innerHTML = 'Отправить заявку <span>→</span>';
+  }
 });
