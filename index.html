@@ -115,9 +115,8 @@
     <section class="section faq" id="faq">
       <div class="container narrow">
         <div class="eyebrow">вопросы</div><h2>FAQ</h2>
-        <details><summary>Можно ли прикрепить методичку или требования преподавателя?</summary><p>Да. В заявке можно прикрепить несколько файлов: PDF, DOC/DOCX, изображения и другие материалы.</p></details>
         <details><summary>Цена может измениться?</summary><p>Указанная цена — базовая. Если объём или требования отличаются, мы сообщим новую стоимость до начала работы.</p></details>
-        <details><summary>Как происходит оплата?</summary><p>Этот блок можно заменить на ваши реальные условия оплаты. Не начинайте работу до согласования стоимости и условий с клиентом.</p></details>
+        <details><summary>Как долго вы делаете работу?</summary><p>Зависит от объема работы, небольшая работа (реферат,презентация) - от 2 до 4 дней; индивидуальные проекты и контрольные точки - от 7 до 12 дней. Существует доплата за срочность (отправим в этот же вечер или на завтрашний день) - цена обговаривается уже в личных сообщениях</p></details>
       </div>
     </section>
   </main>
@@ -133,13 +132,12 @@
       <p class="selected">Вы выбрали: <b id="selectedService">—</b> · <b id="selectedPrice">—</b></p>
       <form id="requestForm" action="https://form.typeform.com/to/KYDBEs5C" method="POST" enctype="multipart/form-data">
         <input type="hidden" id="service" name="service">
-        <label>Ваше имя<input required name="name" placeholder="Например, Аня"></label>
-        <label>Telegram<input required name="telegram" placeholder="@username"></label>
+        <label>Ваше имя, фамилия, отчество<input required name="name" placeholder="Например, Аня"></label>
+        <label>Группа<input required name="name" placeholder="Например, ДРСО21о2"></label>
+        <label>Telegram или ВКонтакте (следите за тем, чтобы у вас были открыты сообщения)<input required name="telegram" placeholder="@username"></label>
         <label>Тема / что нужно сделать<textarea required name="topic" rows="3" placeholder="Например: презентация по экономике на тему..."></textarea></label>
         <label>Срок сдачи<input required name="deadline" type="date"></label>
         <label>Требования и комментарий<textarea name="comment" rows="4" placeholder="Объём, оформление, пожелания и т. д."></textarea></label>
-        <label>Файлы от преподавателя<input id="files" name="files" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.jpg,.jpeg,.png,.zip"></label>
-        <small class="file-note">Важно: GitHub Pages сам по себе не принимает загруженные файлы на сервер. Ниже в инструкции показано, как подключить форму, чтобы файлы реально приходили вам.</small>
         <button class="primary full" type="submit">Отправить заявку <span>→</span></button>
       </form>
       <div class="success" id="success">
@@ -151,6 +149,8 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/library/d/1sptE3h8fa_ytSMYOjXrmF9co0Y0714XzoESEeTzbGV49ZNPY_btgyjbt/1';
+  </script>
 </body>
 </html>
